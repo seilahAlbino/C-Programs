@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 
-SetColor(int ForgC){
+void SetColor(int ForgC){
     WORD wColor;
 
     HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -15,19 +15,17 @@ SetColor(int ForgC){
     }
 }
 
-int main(){
-
+int main()
+{
     int i = 0, iColor = 0;
 
-    while(i > -1){
-        while(iColor <= 15){
-            if(iColor == 15) iColor = 0;
+    while(1)
+    {
+        iColor = rand() % 15 + 1;
+        i++;
+        SetColor(iColor);
+        printf("%d", i);
 
-            iColor++;
-            i++;
-            SetColor(iColor);
-            printf("%d", i);
-        }
     }
     return 0;
 }
