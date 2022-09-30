@@ -20,7 +20,6 @@ void goXY(int x, int y){
     coord.X = x;
     coord.Y = y;
 
-
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
     if (!SetConsoleCursorPosition(hConsole, coord)){
