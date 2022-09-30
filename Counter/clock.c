@@ -18,7 +18,7 @@ int main(){
         }
 
         printf("%dh:%dm:%ds", hours, minutes, seconds);
-        Sleep(1000);//delay 1 second (1000 ms)
+        Sleep(1000); //delay 1 second (1000 ms)
         seconds++;
     }
     return 0;
