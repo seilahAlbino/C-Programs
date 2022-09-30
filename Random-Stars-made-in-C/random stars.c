@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 
-SetColor(int ForgC){
+void SetColor(int ForgC){
     WORD wColor;
 
     HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -15,7 +15,7 @@ SetColor(int ForgC){
     }
 }
 
-goXY(int x, int y){
+void goXY(int x, int y){
     COORD coord;
     coord.X = x;
     coord.Y = y;
@@ -30,9 +30,9 @@ goXY(int x, int y){
 
 int main(){
 
-    int i = 0, x = 0, y = 0, color;
+    int x, y, color;
 
-    while(i != 1){
+    while(1){
 
         x = rand() % 157; //number between 0 and 157
         y = rand() % 60;
