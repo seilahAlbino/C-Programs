@@ -70,6 +70,7 @@ int main()
         scanf("%d", &load);
         system("cls");
     }
+    
     system("cls");
     printf("Acabou oh filho\n\n");
     return 0;
