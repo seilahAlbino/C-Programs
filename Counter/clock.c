@@ -17,7 +17,7 @@ int main(){
             hours++;
         }
 
-        printf("\n\n\n\n\n\n\t\t\t\t%dh:%dm:%ds", hours, minutes, seconds);
+        printf("%dh:%dm:%ds", hours, minutes, seconds);
         Sleep(1000);//delay 1 second (1000 ms)
         seconds++;
     }
