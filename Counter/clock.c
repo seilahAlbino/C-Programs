@@ -3,9 +3,9 @@
 
 int main(){
 
-    int i = 0, seconds = 0, minutes = 0, hours = 0;
+    int seconds = 0, minutes = 0, hours = 0;
 
-    while(i == 0){
+    while(1){
         system("cls");
 
         if(seconds == 60){
