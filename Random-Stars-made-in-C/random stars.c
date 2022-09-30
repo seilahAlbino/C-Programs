@@ -20,6 +20,7 @@ void goXY(int x, int y){
     coord.X = x;
     coord.Y = y;
 
+
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
     if (!SetConsoleCursorPosition(hConsole, coord)){
@@ -28,11 +29,9 @@ void goXY(int x, int y){
 }
 
 int main(){
-
-    int x, y, color;
+    int x = 0, y = 0, color;
 
     while(1){
-
         x = rand() % 157; //number between 0 and 157
         y = rand() % 60;
 
